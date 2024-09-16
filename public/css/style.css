@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f1/Earth_planet.jpg');
+    background-size: cover;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    position: relative;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  
+  .btn {
+    background-color: #FFFFFF;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: 10px 0;
+    font-size: 20px;
+    cursor: pointer;
+    width: 200px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .menu.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  .menu input {
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+    font-size: 14px;
+    box-sizing: border-box;
+    /* Inclui o padding no cálculo da largura */
+  }
+  
+  .menu button {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 80%;
+    max-width: 300px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .close-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    /* Tamanho do emoji */
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .notification {
+    display: none;
+    background-color: black;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    text-align: center;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: translateY(-20px);
+  }
+  
+  .notification.active {
+    display: block;
+    opacity: 1;
+  transform: translateY(0);
+  }
+  
+  .notification span {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }

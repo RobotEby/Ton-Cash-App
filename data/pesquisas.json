@@ -1,0 +1,13 @@
+[
+    {
+      "id": "pesquisa1",
+      "descricao": "Pesquisa sobre hábitos alimentares",
+      "pontos": 500
+    },
+    {
+      "id": "pesquisa2",
+      "descricao": "Pesquisa sobre atividades físicas",
+      "pontos": 300
+    }
+  ]
+  
