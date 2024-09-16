@@ -1,0 +1,13 @@
+{
+    "usuario1": {
+      "password": "senha123",
+      "points": 1000,
+      "payments": 0
+    },
+    "usuario2": {
+      "password": "senha456",
+      "points": 2500,
+      "payments": 50
+    }
+  }
+  
