@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de login</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cash App</h1>
+      <div id="main-menu">
+        <button class="btn" onclick="showMenu('login-menu')">Login</button
+        ><br />
+        <button class="btn" onclick="showMenu('register-menu')">
+          Registrar-se
+        </button>
+      </div>
+
+      <!-- Login Menu -->
+      <div id="login-menu" class="menu">
+        <input
+          type="text"
+          id="login-user"
+          placeholder="Usuário"
+          aria-label="Usuário"
+          required
+        /><br />
+        <input
+          type="password"
+          autocomplete="off"
+          id="login-pass"
+          placeholder="Senha"
+          required
+        /><br />
+        <button class="btn" id="login-button">Entrar</button><br />
+        <button class="close-btn" onclick="showMenu('main-menu')">
+          Voltar
+        </button>
+      </div>
+
+      <!-- Register Menu -->
+      <div id="register-menu" class="menu">
+        <input
+          type="text"
+          id="register-user"
+          placeholder="Usuário"
+          required
+        /><br />
+        <input
+          type="password"
+          id="register-pass"
+          placeholder="Senha"
+          required
+        /><br />
+        <button class="btn" id="register-button">Registrar</button><br />
+        <button class="close-btn" onclick="showMenu('main-menu')">
+          Voltar
+        </button>
+      </div>
+
+      <!-- Notificação -->
+      <div id="notification" class="notification">
+        <span>⚠️</span>
+        <p id="notification-text">Notificação</p>
+      </div>
+    </div>
+
+    <script src="/js/app.js" defer></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
