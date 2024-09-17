@@ -34,6 +34,14 @@ function writeJSONFile(filePath, data) {
 // Rota para registrar um novo usuário
 app.post("/api/users/register", (req, res) => {
   const { username, password } = req.body;
+
+  // Verifica se todos os campos obrigatórios estão preenchidos
+  if (!username || !password) {
+    return res
+      .status(400)
+      .json({ message: "Obrigatório preencher todos os campos." });
+  }
+
   let users = readJSONFile(usersFilePath);
   if (users[username]) {
     return res.status(400).json({ message: "Usuário já registrado." });
