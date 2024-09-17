@@ -12,6 +12,18 @@ function showMenu(menuId) {
   } else {
     document.getElementById("main-menu").style.display = "none";
   }
+
+  // Limpa os campos de entrada ao exibir o menu de registro
+  if (menuId === "register-menu") {
+    document.getElementById("register-user").value = "";
+    document.getElementById("register-pass").value = "";
+  }
+
+  // Limpa os campos de entrada ao exibir o menu de login
+  if (menuId === "login-menu") {
+    document.getElementById("login-user").value = "";
+    document.getElementById("login-pass").value = "";
+  }
 }
 
 // Função de validação de usuário e senha
@@ -55,6 +67,11 @@ function register() {
       JSON.stringify(registeredAccounts)
     ); // Salvar no localStorage
     showNotification("Registrado com sucesso");
+
+    // Limpa os campos de entrada após o registro
+    document.getElementById("register-user").value = "";
+    document.getElementById("register-pass").value = "";
+
     showMenu("main-menu"); // Volta ao menu principal
   } else {
     showNotification("Usuário já existente");
@@ -73,6 +90,12 @@ function login() {
 
   if (registeredAccounts[user] && registeredAccounts[user] === pass) {
     showNotification("Login feito com sucesso");
+
+    // Pergunta se o usuário deseja salvar as credenciais
+    if (confirm("Deseja salvar suas credenciais de login?")) {
+      localStorage.setItem("savedUsername", user);
+      localStorage.setItem("savedPassword", pass);
+    }
   } else {
     showNotification("Falha ao fazer login. Verifique o usuário ou senha.");
   }
@@ -98,3 +121,7 @@ let fix = document.querySelectorAll(".close-btn");
 fix.forEach((button) => {
   button.style.color = "black";
 });
+
+// Adiciona eventos de clique para os botões de login e registro
+document.getElementById("register-button").addEventListener("click", register);
+document.getElementById("login-button").addEventListener("click", login);
