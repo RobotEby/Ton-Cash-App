@@ -4,17 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página de login</title>
-    <link rel="stylesheet" href="public/css/style.css" />
-    <script src="public/js/app.js" defer></script>
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>匚卂丂卄 卂卩卩</h1>
+      <h1>Cash App</h1>
       <div id="main-menu">
-        <button class="btn" onclick="showMenu('login-menu')">𝐋𝐨𝐠𝐢𝐧</button
+        <button class="btn" onclick="showMenu('login-menu')">Login</button
         ><br />
         <button class="btn" onclick="showMenu('register-menu')">
-          𝐑𝐞𝐠𝐢𝐬𝐭𝐫𝐞-𝐬𝐞
+          Registrar-se
         </button>
       </div>
 
@@ -25,26 +24,38 @@
           id="login-user"
           placeholder="Usuário"
           aria-label="Usuário"
+          required
         /><br />
         <input
           type="password"
           autocomplete="off"
           id="login-pass"
           placeholder="Senha"
+          required
         /><br />
-        <button class="btn" id="login-button">𝐄𝐧𝐭𝐫𝐚𝐫</button><br />
+        <button class="btn" id="login-button">Entrar</button><br />
         <button class="close-btn" onclick="showMenu('main-menu')">
-          𝐕𝐨𝐥𝐭𝐚𝐫
+          Voltar
         </button>
       </div>
 
       <!-- Register Menu -->
       <div id="register-menu" class="menu">
-        <input type="text" id="register-user" placeholder="Usuário" /><br />
-        <input type="password" id="register-pass" placeholder="Senha" /><br />
-        <button class="btn" id="register-button">𝐑𝐞𝐠𝐢𝐬𝐭𝐫𝐚𝐫</button><br />
+        <input
+          type="text"
+          id="register-user"
+          placeholder="Usuário"
+          required
+        /><br />
+        <input
+          type="password"
+          id="register-pass"
+          placeholder="Senha"
+          required
+        /><br />
+        <button class="btn" id="register-button">Registrar</button><br />
         <button class="close-btn" onclick="showMenu('main-menu')">
-          𝐕𝐨𝐥𝐭𝐚𝐫
+          Voltar
         </button>
       </div>
 
@@ -54,6 +65,8 @@
         <p id="notification-text">Notificação</p>
       </div>
     </div>
+
+    <script src="/js/app.js" defer></script>
+    <script src="/js/index.js"></script>
   </body>
-  <script src="public/js/index.js"></script>
 </html>
