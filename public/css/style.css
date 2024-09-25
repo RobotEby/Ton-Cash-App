@@ -115,6 +115,9 @@ body {
   .notification.active {
     display: block;
     opacity: 1;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
   transform: translateY(0);
   }
   
