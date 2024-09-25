@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f1/Earth_planet.jpg');
   background-size: cover;
-  background-position: center; /* Garante centralização da imagem */
+  background-position: center;
   color: #FFFFFF;
   display: flex;
   justify-content: center;
@@ -63,7 +63,6 @@ body {
     max-width: 300px;
     font-size: 14px;
     box-sizing: border-box;
-    /* Inclui o padding no cálculo da largura */
   }
   
   .menu button {
@@ -87,7 +86,6 @@ body {
     background-color: transparent;
     border: none;
     font-size: 30px;
-    /* Tamanho do emoji */
     color: #FFFFFF;
     cursor: pointer;
     margin-top: 10px;
