@@ -32,8 +32,9 @@ Bem-vindo à página de login funcional desenvolvida em JavaScript. Este projeto
 
 **A funcionalidade de pontos de pagamento está em desenvolvimento. Esta funcionalidade visa recompensar os usuários com pontos ao se registrarem ou realizarem pesquisas, criando um sistema de incentivos para maior interação na plataforma.**
 
-😁 | `Contribuições
-Contribuições são bem-vindas! Se você encontrou algum problema ou tem sugestões, sinta-se à vontade para abrir uma issue ou enviar um pull request. Vamos juntos melhorar este projeto!`
+## 😁 | Contribuições
+
+`Contribuições são bem-vindas! Se você encontrou algum problema ou tem sugestões, sinta-se à vontade para abrir uma issue ou enviar um pull request. Vamos juntos melhorar este projeto!`
 
 ### Licença
 
